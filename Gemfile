@@ -5,6 +5,7 @@ ruby "2.5.1"
 
 gem "jbuilder", "~> 2.5"
 gem "pg", ">= 0.18", "< 2.0"
+gem "devise"
 gem "puma", "~> 3.11"
 gem "rails", "~> 5.2.1", ">= 5.2.1.1"
 gem "rails-erd"
