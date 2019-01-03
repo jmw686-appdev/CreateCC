@@ -1,0 +1,9 @@
+<%= form_for :source, url: videos_path, method: :post, :html => {:class => 'form-inline'} do |f| %>
+<div class="form-group mb-2">
+  <%= f.label :source, class:"px-2" %>
+  <%= f.text_field :source, autofocus: true, class: "form-control" %>
+</div>
+<div class="actions">
+  <%= f.submit "Add Video", class: "btn btn-info mx-3" %>
+</div>
+<% end %>

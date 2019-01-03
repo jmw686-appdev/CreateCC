@@ -10,6 +10,7 @@ class VideosController < ApplicationController
 
   def create
 
+    redirect_to videos_path, notice: "Successfully Added Video"
   end
 
   def edit
@@ -27,5 +28,5 @@ class VideosController < ApplicationController
   def delete
 
   end
-  
+
 end
