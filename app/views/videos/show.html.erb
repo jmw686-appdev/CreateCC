@@ -1,5 +1,16 @@
-<div class="">
+<div class="video">
   <video src="<%= @video.source %>" controls>
 
   </video>
+</div>
+
+<div class="subtitles">
+  <%= render "subtitle_form" %>
+  <div class="captions">
+    <% @video.subtitle.captions.each do |caption| %>
+      <p>
+        <%= caption %>
+      </p>
+    <% end %>
+  </div>
 </div>
