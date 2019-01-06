@@ -1,0 +1,10 @@
+<div class="">
+  <%= @videos.each do |video| %>
+    <div class="m-3">
+      <%= video.id %>
+      <iframe src="<%= video.source %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+      </iframe>
+    </div>
+  <% end %>
+</div>

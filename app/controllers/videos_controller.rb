@@ -1,7 +1,7 @@
 class VideosController < ApplicationController
 
   def index
-
+    @videos = Video.all
   end
 
   def show
@@ -9,7 +9,7 @@ class VideosController < ApplicationController
   end
 
   def create
-
+    
     redirect_to videos_path, notice: "Successfully Added Video"
   end
 
