@@ -12,7 +12,14 @@
   <div class="captions">
     <% @video.subtitle.captions.each do |caption| %>
       <p>
-        <%= caption %>
+        <%= caption.caption_order %>
+      </p>
+      <p>
+        <%= caption.start_time %>
+        <%= caption.end_time %>
+      </p>
+      <p>
+        <%= caption.text %>
       </p>
     <% end %>
   </div>

@@ -1,0 +1,19 @@
+<%= form_for :caption, url: captions_path, method: :post, :html => {:class => 'form-inline'} do |f| %>
+<div class="form-group mb-2">
+  <%= f.label :caption_order, class:"px-2"%>
+  <%= f.number_field :caption_order, value: @video.subtitle.captions.size + 1 %>
+  <%= f.label :start_time, class:"px-2" %>
+  <%= f.number_field :start_time %>
+  <%= f.label :end_time, class:"px-2" %>
+  <%= f.number_field :end_time %>
+
+  <%= f.label :text, class:"px-2" %>
+  <%= f.text_field :text, autofocus: true, class: "form-control" %>
+  <%= f.label :file_type, class:"px-2" %>
+  <%= f.text_field :file_type, autofocus: true, class: "form-control", value: "srt" %>
+  <%= f.hidden_field :subtitle_id, autofocus: true, value: @video.subtitle.id %>
+</div>
+<div class="actions">
+  <%= f.submit "Add Caption", class: "btn btn-info mx-3" %>
+</div>
+<% end %>
