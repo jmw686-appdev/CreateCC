@@ -1,10 +1,12 @@
 <div class="">
   <% @videos.each do |video| %>
+    <%= link_to video_path(video.id) do %>
     <div class="m-3">
       <%= video.id %>
       <iframe src="<%= video.source %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 
       </iframe>
     </div>
+    <% end %>
   <% end %>
 </div>

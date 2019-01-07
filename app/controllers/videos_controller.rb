@@ -5,7 +5,7 @@ class VideosController < ApplicationController
   end
 
   def show
-
+    @video = Video.find(params.fetch("id"))
   end
 
   def create

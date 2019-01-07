@@ -1,7 +1,10 @@
 <div class="video">
-  <video src="<%= @video.source %>" controls>
+  <!-- <video src="<%= @video.source %>" controls>
 
-  </video>
+  </video> -->
+  <iframe src="<%= @video.source %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+  </iframe>
 </div>
 
 <div class="subtitles">
