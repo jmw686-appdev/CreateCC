@@ -7,8 +7,6 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
-
 ruby "2.5.1"
 
 rails "5.2.1"
